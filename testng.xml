@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="DTXPlus Test Suite">
-    <test name="Login Test">
-        <classes>
-            <class name="testCases.TestCases" />
-        </classes>
-    </test>
-</suite>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testCases.addPatient"/>
+      <class name="testCases.loginPageTestcases"/>
+      <class name="testCases.dashboardTestcases"/>
+      <class name="testComponents.baseClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
